@@ -6,9 +6,12 @@ export function MovieCard({movie}){
         <li className={styles.movies}>
             <Link  to={"/movie/"+ movie.id}>
                 <img 
-                width={230}
-                height={345}
-                className={styles.moviImage} src={imageUrl} alt={movie.title}></img>
+                    width={230}
+                    height={345}
+                    className={styles.moviImage} 
+                    src={imageUrl} 
+                    alt={movie.title}>                    
+                </img>
                 <div>{movie.title}</div>
             </Link>
         </li>
