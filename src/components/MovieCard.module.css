@@ -1,0 +1,20 @@
+.movies{
+    list-style: none;
+    color:yellow;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.movies:hover{
+    opacity: 0.5;
+}
+.moviImage{
+    border-radius: 10px;
+    background-color: azure;
+}
+
+@media (max-width:560px){
+    .moviImage{
+        width: 90%;
+        height: auto;
+    }
+}
