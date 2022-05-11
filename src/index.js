@@ -6,11 +6,11 @@ import {App} from "./App"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
-function Componente(props){
 /*     const titulo= props.titulo;
     const contenido = props.contenido;
     es lo mismo de abajo pero no simplificado */
+/* function Componente(props){
+
 
     const {titulo, contenido}= props;
     return(
@@ -19,7 +19,7 @@ function Componente(props){
             <div>{contenido}</div>
         </div>
     );
-}
+} */
 
 root.render(
 
