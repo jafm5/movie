@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Spinner } from "../components/Spinner";
 import { get } from "../utils/httpClient";
-import movie from "./movie.json"
 import styles from "./MovieDetails.module.css"
+import { getMovieImg } from "../utils/getMovieImg";
 
 export function MovieDetails(){
     //se guarda el parametro con el id usando el hook useParams
@@ -28,7 +28,8 @@ export function MovieDetails(){
         return null;
     } */
 
-    const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
+    const imageUrl = getMovieImg (movie.poster_path, 500 );
+    /* const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path; */
     return( 
         <div className={styles.detailsContainer}>
             <img className={`${styles.col} ${styles.movieImage}`} src={imageUrl} alt={movie.title}/>

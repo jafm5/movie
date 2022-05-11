@@ -1,0 +1,7 @@
+.empty{
+    display: flex;
+    font-size: 2rem;
+    color: yellow;
+    justify-content: center;
+    margin: 40px;
+}
